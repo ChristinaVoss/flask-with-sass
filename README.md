@@ -34,7 +34,7 @@ In the head of the HTML, use the assets to link to the css file:
 {% endassets %}
 ```
 
-Finally, create a static folder in the project one to hold the assets, including a dist folder (for output css), a src folder (to hold all the scss files) and any other folders, such as for images etc. Make sure the "depends" path given in Bundle() matches the actual path for your scss files (no need to includ "static" in the path - Flask Assets expect the project to have it.
+Finally, create a static folder in the project one to hold the assets, including a dist folder (for output css), a src folder (to hold all the scss files) and any other folders, such as for images etc. Make sure the "depends" path given in Bundle() matches the actual path for your scss files (no need to includ "static" in the path - Flask Assets expect the project to have it).
 
 **Setup**
 
