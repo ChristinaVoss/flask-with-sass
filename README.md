@@ -6,7 +6,7 @@ Here we create a "project" folder in the overall flask-assets folder, which will
 
 <img width="687" alt="Screenshot 2022-05-12 at 09 35 32" src="https://user-images.githubusercontent.com/20923607/168028455-db189aba-ac8a-43fa-8b64-61257de913c7.png">
 
-**Parts needed**
+### Parts needed
 
 In `__init__.py`, import Environment and Bundle from flask_assets:
 
@@ -36,7 +36,7 @@ In the head of the HTML, use the assets to link to the css file:
 
 Finally, create a static folder in the project one to hold the assets, including a dist folder (for output css), a src folder (to hold all the scss files) and any other folders, such as for images etc. Make sure the "depends" path given in Bundle() matches the actual path for your scss files (no need to includ "static" in the path - Flask Assets expect the project to have it).
 
-**Setup**
+### Setup
 
 First create and activate some form of environment to store your dependencies. I like Anaconda:
 
@@ -50,7 +50,7 @@ Then install Flask, Flask-Assets and libsass
 
 `$ pip install Flask Flask-Assets libsass`
 
-**Run the app**
+### Run the app
 
 ```
 $ export FLASK_APP=app.py
@@ -58,3 +58,8 @@ $ flask run
 ```
 
 You should now be able to see the output in your browser window (at http://127.0.0.1:5000) 
+
+### Screenshot of app running in browser
+
+<img width="517" alt="Screenshot 2022-05-12 at 18 02 25" src="https://user-images.githubusercontent.com/20923607/168129847-7d76b9c3-8dba-4947-bf0e-b0095c34292c.png">
+
